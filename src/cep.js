@@ -1,8 +1,8 @@
-//import axios from 'axios';
-
+// import axios from 'axios';
 // import { error } from "winston";
+// import fetch from 'node-fetch';
 
-const buscarCep = async function(cep: string) {
+const buscarCep = async function(cep) {
   try {
      //const padraoTeste = "01001000";
       const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
@@ -26,7 +26,4 @@ const buscarCep = async function(cep: string) {
   }
 }
 
-const cep = "55270000";  
-
-console.log("pending: ", buscarCep(cep));  
-
+module.exports = buscarCep; 
