@@ -27,6 +27,7 @@ const lojaSchema = new mongoose.Schema({
   },
   localidade: {
     type: String,
+    required: [true, "Uma deve ter uma cidade"]
   },
   uf: {
     type: String,
