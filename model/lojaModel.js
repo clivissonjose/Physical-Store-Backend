@@ -9,7 +9,9 @@ const lojaSchema = new mongoose.Schema({
   cep: {
     type: String,
     required: [true, "Uma loja precisa ter um cep"],
-    trim: true
+    trim: true,
+  //  unique: [true, "Já tem loja cadastrada nesse cep"],
+    unique: true
   },
   logradouro: {
     type: String,
@@ -23,7 +25,7 @@ const lojaSchema = new mongoose.Schema({
   },
   bairro: {
     type: String,
-    required: [true, "Uma loja precisa ter um bairro"]
+    required: [true, "Uma loja precisa ter um bairro"],
   },
   localidade: {
     type: String,

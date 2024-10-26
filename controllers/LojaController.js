@@ -52,15 +52,11 @@ exports.criarLoja = async (req, res) => {
 
   try {
 
-    const cep = await buscarCep(req.params.cep);
-     console.log("Cep:" , cep);
-    // console.log("Body da req: ", req.body.localidade);
-   // const novaLoja = await Loja.create(req.body);
-
-   console.log(cep.cidade);
-   console.log(cep.bairro);
+    // Pegar cep digitado pelo usuário
+    const cep = await buscarCep(req.body.cep);
+    
     const novaLoja = await Loja.create({
-      nome: "Magazine Luiza",            // Nome fixo da loja, substitua conforme necessário
+      nome: "Magazine Luiza",         
       cep:cep.cep,
       logradouro: cep.logradouro,
       complemento: cep.complemento,
