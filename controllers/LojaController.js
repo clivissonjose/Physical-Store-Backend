@@ -1,8 +1,10 @@
 const Loja = require("./../model/lojaModel");
-const buscarCep = require("./../services/buscarEndereco");
+const buscarCep = require("../services/buscarEnderecoService");
+const geoLocalizacao = require("../services/geoLocalizacao");
 
-exports.pegarLojas = async (req, res) => {  
+exports.pegarLojas = async(req, res)  => {  
     try {
+
       const lojas = await Loja.find();
   
       console.log(lojas);
@@ -30,7 +32,7 @@ exports.pegarMesmoCep = async (req, res) => {
     if(!lojas){
       return res.status(404).json({
         status: "Fail",
-        message: "Não foi possível achar tal cep",
+        message: "Não foi possível achar tal cep!",
       })
   }
  // console.log("Quantidade de lojas: ", lojas.length); -> undefined  
@@ -54,12 +56,21 @@ exports.criarLoja = async (req, res) => {
 
     // Pegar cep digitado pelo usuário
     const cep = await buscarCep(req.body.cep);
-    
+
+    // Constante para pegar latitude e longitude
+    const latLong = await geoLocalizacao(cep);
+   
+    const latitude = latLong.latitude;
+    const longitude = latLong.longitude;
+
+    // Adicionar loja no Bando de Dados
     const novaLoja = await Loja.create({
       nome: "Magazine Luiza",         
       cep:cep.cep,
       logradouro: cep.logradouro,
       complemento: cep.complemento,
+      latitude: latitude,
+      longitude: longitude,
       unidade: cep.unidade,
       bairro:   cep.bairro,
       localidade: cep.cidade,
@@ -83,5 +94,14 @@ exports.criarLoja = async (req, res) => {
       status: 'fail',
       message: err.message
     });
+  }
+};
+
+exports.lojasProximas = async (req,res) => {
+  try{
+
+    
+  }catch(error){
+
   }
 }

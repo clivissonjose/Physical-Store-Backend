@@ -10,12 +10,19 @@ const lojaSchema = new mongoose.Schema({
     type: String,
     required: [true, "Uma loja precisa ter um cep"],
     trim: true,
-  //  unique: [true, "Já tem loja cadastrada nesse cep"],
     unique: true
   },
   logradouro: {
     type: String,
     required: [true, "Uma loja precisa ter um logradouro"],
+  },
+  latitude: {
+    type: Number,
+    required: true
+  },
+  longitude: {
+    type: Number,
+    required: true
   },
   complemento: {
     type: String,
@@ -48,6 +55,14 @@ const lojaSchema = new mongoose.Schema({
   },
   ddd: {
     type: String,
+  },
+  latitude: {
+    type: Number,
+    required: true
+  },
+  longitude: {
+    type: Number,
+    required: true
   },
   siafi: {
     type: String,
