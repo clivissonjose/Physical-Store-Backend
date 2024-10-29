@@ -27,7 +27,7 @@ exports.pegarMesmoCep = async (req, res) => {
 
   try{
     console.log("CEP buscado:", req.params.cep);
-    const lojas =  await Loja.findOne({ cep: req.params.cep });
+    const lojas =  await Loja.find({ cep: req.params.cep });
   
     if(!lojas){
       return res.status(404).json({
@@ -57,8 +57,9 @@ exports.criarLoja = async (req, res) => {
     // Pegar cep digitado pelo usuário
     const cep = await buscarCep(req.body.cep);
 
+    console.log(cep);
     // Constante para pegar latitude e longitude
-    const latLong = await geoLocalizacao(cep);
+    const latLong = await geoLocalizacao(cep.cep);
    
     const latitude = latLong.latitude;
     const longitude = latLong.longitude;
