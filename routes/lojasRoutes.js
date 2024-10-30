@@ -8,6 +8,7 @@ router.route("/")
   .get(lojaController.pegarLojas)
   .post(lojaController.criarLoja);
 router.route("/:cep")
-  .get(lojaController.pegarMesmoCep);
+ // .get(lojaController.pegarMesmoCep)
+  .get(lojaController.lojasProximas100km);
 
 module.exports =  router;

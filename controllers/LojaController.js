@@ -1,6 +1,7 @@
 const Loja = require("./../model/lojaModel");
-const buscarCep = require("../services/buscarEnderecoService");
+const buscarEndereco = require("../services/buscarEnderecoService");
 const geoLocalizacao = require("../services/geoLocalizacao");
+const calcularDistancia = require("../services/calcularDistanciaService");
 
 exports.pegarLojas = async(req, res)  => {  
     try {
@@ -55,7 +56,7 @@ exports.criarLoja = async (req, res) => {
   try {
 
     // Pegar cep digitado pelo usuário
-    const cep = await buscarCep(req.body.cep);
+    const cep = await buscarEndereco(req.body.cep);
 
     console.log(cep);
     // Constante para pegar latitude e longitude
@@ -98,11 +99,44 @@ exports.criarLoja = async (req, res) => {
   }
 };
 
-exports.lojasProximas = async (req,res) => {
+exports.lojasProximas100km = async (req,res) => {
   try{
 
+    const latLong = await geoLocalizacao(req.params.cep);
+    console.log("Latitude: ", latLong.latitude, " Longitude: ", latLong.longitude);
     
-  }catch(error){
+    const lojas = await Loja.find();
 
+    const lojasProximas = lojas.filter((el) => {
+      const distancia = calcularDistancia(latLong.latitude, latLong.longitude, el.latitude, el.longitude);
+      return distancia <= 100;
+    });
+
+    if (lojasProximas.length > 0) {
+      console.log(lojasProximas);
+      res.status(200).json({
+        status: "Success",
+        data: {
+          lojas: lojasProximas
+        }
+      });
+    } else {
+      console.log("Sem lojas no raio de 100km!");
+      res.status(200).json({
+        status: "Success",
+        message: "Sem lojas no raio de 100km!"
+      });
+    }
+
+    if(lojasProximas.length > 0)
+      console.log(lojasProximas);
+    else
+      console.log("Sem lojas no raio de 100km!");
+ 
+  }catch(error){
+    res.status.json({
+      status: "fail",
+      message: message.error
+    })
   }
 }

@@ -14,6 +14,19 @@ const lojaSchema = new mongoose.Schema({
   logradouro: {
     type: String,
   },
+  bairro: {
+    type: String,
+  },
+  localidade: {
+    type: String,
+    required: [true, "Uma deve ter uma cidade"]
+  },
+  uf: {
+    type: String,
+  },
+  estado: {
+    type: String,
+  },
   latitude: {
     type: Number,
     required: true
@@ -26,19 +39,6 @@ const lojaSchema = new mongoose.Schema({
     type: String,
   },
   unidade: {
-    type: String,
-  },
-  bairro: {
-    type: String,
-  },
-  localidade: {
-    type: String,
-    required: [true, "Uma deve ter uma cidade"]
-  },
-  uf: {
-    type: String,
-  },
-  estado: {
     type: String,
   },
   regiao: {
