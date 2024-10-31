@@ -14,3 +14,76 @@
 {"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T17:35:15.811Z"}
 {"level":"info","message":"Lojas recuperadas com sucesso","timestamp":"2024-10-31T17:35:29.822Z","total":13}
 {"level":"info","message":"Lojas recuperadas com sucesso","timestamp":"2024-10-31T17:35:31.968Z","total":13}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:17:19.110Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:18:21.265Z"}
+{"level":"info","loja":{"__v":0,"_id":"6723c9fd99fc577314eb3363","bairro":"","cep":"55200-000","complemento":"","ddd":"87","estado":"Pernambuco","gia":"","ibge":"2610905","latitude":-8.3627277,"localidade":"Pesqueira","logradouro":"","longitude":-36.7388486,"nome":"Magazine Luiza","regiao":"Nordeste","siafi":"2517","uf":"PE","unidade":""},"message":"Nova loja criada:","timestamp":"2024-10-31T18:18:37.886Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:20:03.195Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:20:06.228Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:20:27.097Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:20:45.402Z"}
+{"cep":"56300000","level":"warn","message":"Sem lojas no raio de 100km para o CEP:","timestamp":"2024-10-31T18:21:28.392Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:23:55.078Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:25:01.927Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:25:36.146Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:25:41.458Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:25:46.111Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:25:52.817Z"}
+{"level":"error","message":"Erro ao criar loja: Cannot read properties of null (reading 'cep')","timestamp":"2024-10-31T18:26:35.852Z"}
+{"level":"error","message":"Erro ao criar loja: Cannot read properties of null (reading 'cep')","timestamp":"2024-10-31T18:26:51.081Z"}
+{"level":"error","message":"Erro ao criar loja: Cannot read properties of null (reading 'cep')","timestamp":"2024-10-31T18:27:19.678Z"}
+{"level":"error","message":"Erro ao criar loja: Cannot read properties of null (reading 'cep')","timestamp":"2024-10-31T18:36:03.566Z"}
+{"level":"info","loja":{"__v":0,"_id":"6723ce1a16151765903b89f0","bairro":"","cep":"55270-000","complemento":"","ddd":"87","estado":"Pernambuco","gia":"","ibge":"2616001","latitude":-8.6294118,"localidade":"Venturosa","logradouro":"","longitude":-36.8034921,"nome":"Magazine Luiza","regiao":"Nordeste","siafi":"2619","uf":"PE","unidade":""},"message":"Nova loja criada:","timestamp":"2024-10-31T18:36:10.824Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:37:57.552Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:38:01.472Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:38:08.032Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:38:10.316Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:40:25.205Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:40:27.474Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:40:29.440Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:40:50.256Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:41:23.203Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:42:33.775Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:42:36.497Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:43:59.657Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:45:14.695Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:45:37.248Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:46:00.218Z"}
+{"cep":"55270000","level":"warn","message":"Não foi possível deletar loja, loja não encontrada:","timestamp":"2024-10-31T18:46:10.741Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:48:09.685Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:48:11.376Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:48:12.342Z"}
+{"cep":"55270000","level":"warn","message":"Não foi possível deletar loja, loja não encontrada:","timestamp":"2024-10-31T18:48:17.848Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:48:28.061Z"}
+{"cep":"55270000","level":"warn","message":"Não foi possível deletar loja, loja não encontrada:","timestamp":"2024-10-31T18:48:40.267Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:53:37.131Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:53:48.325Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T18:53:57.296Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T21:28:03.245Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T21:29:43.844Z"}
+{"cep":"55270000","level":"warn","message":"Não foi possível deletar loja, loja não encontrada:","timestamp":"2024-10-31T21:31:13.678Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T21:32:23.492Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T21:32:25.198Z"}
+{"level":"info","loja":{"__v":0,"_id":"6722b82fb3457e0ec5746135","bairro":"","cep":"55270-000","complemento":"","ddd":"87","estado":"Pernambuco","gia":"","ibge":"2616001","latitude":-8.6294118,"localidade":"Venturosa","logradouro":"","longitude":-36.8034921,"nome":"Magazine Luiza","regiao":"Nordeste","siafi":"2619","uf":"PE","unidade":""},"message":"Loja deletada com sucesso:","timestamp":"2024-10-31T21:33:17.659Z"}
+{"level":"info","lojas":[{"__v":0,"_id":"6723ce1a16151765903b89f0","bairro":"","cep":"55270-000","complemento":"","ddd":"87","distancia":0,"estado":"Pernambuco","gia":"","ibge":"2616001","latitude":-8.6294118,"localidade":"Venturosa","logradouro":"","longitude":-36.8034921,"nome":"Magazine Luiza","regiao":"Nordeste","siafi":"2619","uf":"PE","unidade":""},{"__v":0,"_id":"6722b838b3457e0ec5746137","bairro":"","cep":"55280-000","complemento":"","ddd":"87","distancia":14.76068811406491,"estado":"Pernambuco","gia":"","ibge":"2610806","latitude":-8.7088091,"localidade":"Pedra","logradouro":"","longitude":-36.9111057,"nome":"Magazine Luiza","regiao":"Nordeste","siafi":"2515","uf":"PE","unidade":""},{"__v":0,"_id":"6723c9fd99fc577314eb3363","bairro":"","cep":"55200-000","complemento":"","ddd":"87","distancia":30.494176385091784,"estado":"Pernambuco","gia":"","ibge":"2610905","latitude":-8.3627277,"localidade":"Pesqueira","logradouro":"","longitude":-36.7388486,"nome":"Magazine Luiza","regiao":"Nordeste","siafi":"2517","uf":"PE","unidade":""},{"__v":0,"_id":"6722b851b3457e0ec5746139","bairro":"Coliseu","cep":"56501-010","complemento":"","ddd":"87","distancia":38.73793904812238,"estado":"Pernambuco","gia":"","ibge":"2601201","latitude":-8.4116169,"localidade":"Arcoverde","logradouro":"Rua Um","longitude":-37.0784332,"nome":"Magazine Luiza","regiao":"Nordeste","siafi":"2323","uf":"PE","unidade":""},{"__v":0,"_id":"6722b921b3457e0ec574613c","bairro":"Francisco Simão dos Santos Figueira","cep":"55291-010","complemento":"","ddd":"87","distancia":46.661331500076244,"estado":"Pernambuco","gia":"","ibge":"2606002","latitude":-8.902953499999999,"localidade":"Garanhuns","logradouro":"Rua Manoel Azevedo","longitude":-36.4815028,"nome":"Magazine Luiza","regiao":"Nordeste","siafi":"2419","uf":"PE","unidade":""}],"message":"Lojas próximas encontradas:","timestamp":"2024-10-31T21:34:34.963Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T21:37:08.445Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T21:37:10.580Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T21:37:59.899Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T21:40:01.907Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T21:40:06.701Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T21:40:42.415Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T21:40:44.113Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T21:40:46.691Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T21:40:50.259Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T21:40:51.157Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T21:40:58.951Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T21:41:03.731Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T21:41:04.554Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T21:41:07.961Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T21:41:10.824Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T21:41:21.076Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T21:41:23.190Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T21:44:45.117Z"}
+{"level":"info","loja":{"__v":0,"_id":"6723faba03af814265a1a25e","bairro":"","cep":"57800-000","complemento":"","ddd":"82","estado":"Alagoas","gia":"","ibge":"2709301","latitude":-9.1113278,"localidade":"União dos Palmares","logradouro":"","longitude":-35.958777,"nome":"Magazine Luiza","regiao":"Nordeste","siafi":"2885","uf":"AL","unidade":""},"message":"Nova loja criada:","timestamp":"2024-10-31T21:46:34.513Z"}
+{"level":"info","message":"Lojas recuperadas com sucesso","timestamp":"2024-10-31T21:47:36.452Z","total":15}
+{"cep":"56300000","level":"warn","message":"Sem lojas no raio de 100km para o CEP:","timestamp":"2024-10-31T21:47:48.037Z"}
+{"level":"info","lojas":[{"__v":0,"_id":"6722b72fb3457e0ec5746120","bairro":"Jacintinho","cep":"57041-000","complemento":"","ddd":"82","distancia":0,"estado":"Alagoas","gia":"","ibge":"2704302","latitude":-9.6407922,"localidade":"Maceió","logradouro":"Rua Cleto Campelo","longitude":-35.7179358,"nome":"Magazine Luiza","regiao":"Nordeste","siafi":"2785","uf":"AL","unidade":""},{"__v":0,"_id":"6722b703b3457e0ec574611e","bairro":"Farol","cep":"57050-000","complemento":"até 812 - lado par","ddd":"82","distancia":2.34708253137574,"estado":"Alagoas","gia":"","ibge":"2704302","latitude":-9.6537949,"localidade":"Maceió","logradouro":"Avenida Fernandes Lima","longitude":-35.7348017,"nome":"Magazine Luiza","regiao":"Nordeste","siafi":"2785","uf":"AL","unidade":""},{"__v":0,"_id":"6722b73bb3457e0ec5746122","bairro":"Cidade Universitária","cep":"57073-470","complemento":"lado ímpar","ddd":"82","distancia":6.099944460873981,"estado":"Alagoas","gia":"","ibge":"2704302","latitude":-9.587458800000002,"localidade":"Maceió","logradouro":"Avenida Menino Marcelo","longitude":-35.7309625,"nome":"Magazine Luiza","regiao":"Nordeste","siafi":"2785","uf":"AL","unidade":""},{"__v":0,"_id":"6723faba03af814265a1a25e","bairro":"","cep":"57800-000","complemento":"","ddd":"82","distancia":64.53111202875357,"estado":"Alagoas","gia":"","ibge":"2709301","latitude":-9.1113278,"localidade":"União dos Palmares","logradouro":"","longitude":-35.958777,"nome":"Magazine Luiza","regiao":"Nordeste","siafi":"2885","uf":"AL","unidade":""}],"message":"Lojas próximas encontradas:","timestamp":"2024-10-31T21:48:57.148Z"}

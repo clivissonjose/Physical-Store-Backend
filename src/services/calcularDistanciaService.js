@@ -23,6 +23,6 @@ function calcularDistancia(latCep, longCep, latLoja, longLoja) {
 // Venturosa -> -8.5772346, -36.8741731 === -8.5765, -36.8749
 // Pedra -> -8.5001, -36.9483
 // Arcoverde -> -8.4176, -37.0585
-const distance =  calcularDistancia(-8.4176, -37.0585, -8.5001, -36.9483);
-console.log(distance);
+// const distance =  calcularDistancia(-8.4176, -37.0585, -8.5001, -36.9483);
+// console.log(distance);
 module.exports = calcularDistancia;

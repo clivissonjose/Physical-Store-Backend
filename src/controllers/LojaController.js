@@ -3,9 +3,10 @@ const buscarEndereco = require("../services/buscarEnderecoService");
 const geoLocalizacao = require("../services/buscarCoordenadasService");
 const calcularDistancia = require("../services/calcularDistanciaService");
 const logger = require("../utils/logger");
-//import calcularDistancia from "../services/calcularDistanciaService.js";
 
-exports.pegarLojas = async (req, res) => {
+// exports.pegarLojas = async (req, res) => {
+async function pegarLojas(req,res)  {
+
   try {
     const lojas = await Loja.find();
 
@@ -25,8 +26,9 @@ exports.pegarLojas = async (req, res) => {
     });
   }
 };
-//async function pegarMesmoCep(req, res) {
-exports.pegarMesmoCep = async (req, res) => {
+
+// exports.pegarMesmoCep = async (req, res) => {
+async function pegarMesmoCep(req, res) {
   try {
     console.log("CEP buscado:", req.params.cep);
     const lojas = await Loja.find({ cep: req.params.cep });
@@ -39,7 +41,7 @@ exports.pegarMesmoCep = async (req, res) => {
     }
     // console.log("Quantidade de lojas: ", lojas.length); -> undefined
     res.status(200).json({
-      status: "Success9",
+      status: "Success",
       data: {
         lojas: lojas,
       },
@@ -52,23 +54,41 @@ exports.pegarMesmoCep = async (req, res) => {
   }
 };
 
-exports.deletarLoja = async (req, res) => {
-  try {
-    const loja = await Loja.findOneAndDelete({ cep: req.params.cep });
+//exports.deletarLoja = async (req, res) => {
+async function deletarLoja(req,res) {
 
+  try {
+    
+    const loja = await Loja.findOneAndDelete({ cep: req.params.cep });
+    
+    console.log("Loja: ", loja);
     if (!loja) {
       console.log("Não foi possível  deletar loja!");
+      logger.warn("Não foi possível deletar loja, loja não encontrada:", { cep: req.params.cep });
+      return res.status(404).json({
+        status: "Fail",
+        message: "Não foi possível achar tal cep!",
+      });
     }
 
-    res.status.json({
+    logger.info("Loja deletada com sucesso:", { loja });
+    res.status(200).json({
       status: "success",
       data: {
         loja,
       },
     });
-  } catch (err) {}
+  } catch (err) {
+    logger.error('Erro ao deletar loja:', { message: err.message });
+    res.status(500).json({
+      status: "error",
+      message: 'Erro ao deletar loja.'
+    });
+  }
 };
-exports.criarLoja = async (req, res) => {
+
+async function criarLoja(req,res) {
+//exports.criarLoja = async (req, res) => {
   try {
     // Pegar cep digitado pelo usuário
     const cep = await buscarEndereco(req.body.cep);
@@ -100,6 +120,7 @@ exports.criarLoja = async (req, res) => {
       siafi: cep.siafi,
     });
 
+    logger.info("Nova loja criada:", { loja: novaLoja });
     res.status(201).json({
       status: "success",
       data: {
@@ -107,6 +128,7 @@ exports.criarLoja = async (req, res) => {
       },
     });
   } catch (err) {
+    logger.error('Erro ao criar loja:', { message: err.message });
     res.status(400).json({
       status: "fail",
       message: err.message,
@@ -114,7 +136,8 @@ exports.criarLoja = async (req, res) => {
   }
 };
 
-exports.lojasProximas100km = async (req, res) => {
+async function lojasProximas100km(req,res) {
+//exports.lojasProximas100km = async (req, res) => {
   try {
     const latLong = await geoLocalizacao(req.params.cep);
     const lojas = await Loja.find();
@@ -137,7 +160,8 @@ exports.lojasProximas100km = async (req, res) => {
     lojasProximas.sort((a, b) => a.distancia - b.distancia);
 
     if (lojasProximas.length > 0) {
-      console.log(lojasProximas);
+      logger.info("Lojas próximas encontradas:", { lojas: lojasProximas });
+    //  console.log(lojasProximas);
       res.status(200).json({
         status: "Success",
         data: {
@@ -145,6 +169,7 @@ exports.lojasProximas100km = async (req, res) => {
         },
       });
     } else {
+      logger.warn("Sem lojas no raio de 100km para o CEP:", { cep: req.params.cep });
       console.log("Sem lojas no raio de 100km!");
       res.status(200).json({
         status: "Success",
@@ -152,9 +177,19 @@ exports.lojasProximas100km = async (req, res) => {
       });
     }
   } catch (error) {
+    logger.error('Erro ao buscar lojas próximas:', { message: error.message });
     res.status(500).json({
       status: "fail",
       message: error.message,
     });
   }
 };
+
+
+module.exports = {
+  pegarLojas,
+  pegarMesmoCep,
+  deletarLoja,
+  criarLoja,
+  lojasProximas100km
+};  
