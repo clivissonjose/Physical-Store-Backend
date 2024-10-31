@@ -1,7 +1,8 @@
 const Loja = require("./../model/lojaModel");
 const buscarEndereco = require("../services/buscarEnderecoService");
-const geoLocalizacao = require("../services/geoLocalizacao");
+const geoLocalizacao = require("../services/buscarCoordenadasService");
 const calcularDistancia = require("../services/calcularDistanciaService");
+//import calcularDistancia from "../services/calcularDistanciaService.js";
 
 exports.pegarLojas = async(req, res)  => {  
     try {
@@ -23,7 +24,7 @@ exports.pegarLojas = async(req, res)  => {
       });
     }
   };
-
+//async function pegarMesmoCep(req, res) {
 exports.pegarMesmoCep = async (req, res) => {
 
   try{
@@ -51,6 +52,26 @@ exports.pegarMesmoCep = async (req, res) => {
   }
 }
 
+exports.deletarLoja = async (req,res) => {
+  try{
+
+  const loja =  await Loja.findOneAndDelete({ cep: req.params.cep });
+
+  if(!loja){
+    console.log("Não foi possível  deletar loja!");
+  }
+
+  res.status.json({
+    status: "success",
+    data:{
+      loja
+    }
+  });
+
+  }catch(err){
+    
+  }
+}
 exports.criarLoja = async (req, res) => {
 
   try {
@@ -99,44 +120,43 @@ exports.criarLoja = async (req, res) => {
   }
 };
 
-exports.lojasProximas100km = async (req,res) => {
-  try{
 
+exports.lojasProximas100km = async (req, res) => {
+  try {
     const latLong = await geoLocalizacao(req.params.cep);
-    console.log("Latitude: ", latLong.latitude, " Longitude: ", latLong.longitude);
-    
     const lojas = await Loja.find();
 
-    const lojasProximas = lojas.filter((el) => {
-      const distancia = calcularDistancia(latLong.latitude, latLong.longitude, el.latitude, el.longitude);
-      return distancia <= 100;
-    });
+    // Filtra as lojas no raio de 100km e adiciona a distância calculada
+    
+    const lojasProximas = lojas
+      .map((el) => {
+        const distancia = calcularDistancia(latLong.latitude, latLong.longitude, el.latitude, el.longitude);
+        return { ...el._doc, distancia }; // usa o _doc para copiar os dados da loja e adicionar a distância
+     })
+      .filter((el) => el.distancia <= 100);
+
+    // Ordena as lojasProximas pela distância
+    lojasProximas.sort((a, b) => a.distancia - b.distancia);
 
     if (lojasProximas.length > 0) {
       console.log(lojasProximas);
       res.status(200).json({
         status: "Success",
         data: {
-          lojas: lojasProximas
-        }
+          lojas: lojasProximas,
+        },
       });
     } else {
       console.log("Sem lojas no raio de 100km!");
       res.status(200).json({
         status: "Success",
-        message: "Sem lojas no raio de 100km!"
+        message: "Sem lojas no raio de 100km!",
       });
     }
-
-    if(lojasProximas.length > 0)
-      console.log(lojasProximas);
-    else
-      console.log("Sem lojas no raio de 100km!");
- 
-  }catch(error){
-    res.status.json({
+  } catch (error) {
+    res.status(500).json({
       status: "fail",
-      message: message.error
-    })
+      message: error.message,
+    });
   }
-}
+};
