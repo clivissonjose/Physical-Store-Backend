@@ -17,7 +17,8 @@ async function buscarCoordenadas(cep) {
     });
 
     const data = response.data;
-
+ 
+    // Verificar se tudo está ok
     if (data.status !== "OK" || data.results.length === 0) {
       console.error("CEP não encontrado ou erro na requisição:", data.status);
       return null;

@@ -133,3 +133,49 @@
 {"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:40:33.215Z"}
 {"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:41:35.467Z"}
 {"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:42:31.624Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:00:16.616Z"}
+{"level":"info","loja":{"__v":0,"_id":"6724b4e8cce410b5ec4c7325","bairro":"Consolação","cep":"01304-000","complemento":"até 698 - lado par","ddd":"11","estado":"São Paulo","gia":"1004","ibge":"3550308","latitude":-23.5506078,"localidade":"São Paulo","logradouro":"Rua Augusta","longitude":-46.6481319,"nome":"Magazine Luiza","regiao":"Sudeste","siafi":"7107","uf":"SP","unidade":""},"message":"Nova loja criada:","timestamp":"2024-11-01T11:00:56.932Z"}
+{"level":"error","message":"Erro ao criar loja: Cannot read properties of null (reading 'cep')","timestamp":"2024-11-01T11:01:30.505Z"}
+{"level":"info","loja":{"__v":0,"_id":"6724b56ecce410b5ec4c7327","bairro":"Cavalhada","cep":"91910-200","complemento":"de 2561/2562 a 3089/3090","ddd":"51","estado":"Rio Grande do Sul","gia":"","ibge":"4314902","latitude":-30.1023661,"localidade":"Porto Alegre","logradouro":"Avenida Otto Niemeyer","longitude":-51.23265989999999,"nome":"Magazine Luiza","regiao":"Sul","siafi":"8801","uf":"RS","unidade":""},"message":"Nova loja criada:","timestamp":"2024-11-01T11:03:10.259Z"}
+{"level":"info","lojas":[{"__v":0,"_id":"6723ce1a16151765903b89f0","bairro":"","cep":"55270-000","complemento":"","ddd":"87","distancia":0,"estado":"Pernambuco","gia":"","ibge":"2616001","latitude":-8.6294118,"localidade":"Venturosa","logradouro":"","longitude":-36.8034921,"nome":"Magazine Luiza","regiao":"Nordeste","siafi":"2619","uf":"PE","unidade":""},{"__v":0,"_id":"6722b838b3457e0ec5746137","bairro":"","cep":"55280-000","complemento":"","ddd":"87","distancia":14.76068811406491,"estado":"Pernambuco","gia":"","ibge":"2610806","latitude":-8.7088091,"localidade":"Pedra","logradouro":"","longitude":-36.9111057,"nome":"Magazine Luiza","regiao":"Nordeste","siafi":"2515","uf":"PE","unidade":""},{"__v":0,"_id":"6723c9fd99fc577314eb3363","bairro":"","cep":"55200-000","complemento":"","ddd":"87","distancia":30.494176385091784,"estado":"Pernambuco","gia":"","ibge":"2610905","latitude":-8.3627277,"localidade":"Pesqueira","logradouro":"","longitude":-36.7388486,"nome":"Magazine Luiza","regiao":"Nordeste","siafi":"2517","uf":"PE","unidade":""},{"__v":0,"_id":"6722b851b3457e0ec5746139","bairro":"Coliseu","cep":"56501-010","complemento":"","ddd":"87","distancia":38.73793904812238,"estado":"Pernambuco","gia":"","ibge":"2601201","latitude":-8.4116169,"localidade":"Arcoverde","logradouro":"Rua Um","longitude":-37.0784332,"nome":"Magazine Luiza","regiao":"Nordeste","siafi":"2323","uf":"PE","unidade":""},{"__v":0,"_id":"6722b921b3457e0ec574613c","bairro":"Francisco Simão dos Santos Figueira","cep":"55291-010","complemento":"","ddd":"87","distancia":46.661331500076244,"estado":"Pernambuco","gia":"","ibge":"2606002","latitude":-8.902953499999999,"localidade":"Garanhuns","logradouro":"Rua Manoel Azevedo","longitude":-36.4815028,"nome":"Magazine Luiza","regiao":"Nordeste","siafi":"2419","uf":"PE","unidade":""}],"message":"Lojas próximas encontradas:","timestamp":"2024-11-01T11:06:05.622Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:08:08.947Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:08:11.317Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:08:15.349Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:08:27.265Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:08:28.905Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:08:32.530Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:08:41.986Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:08:43.815Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:08:46.660Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:09:00.806Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:09:03.033Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:09:06.588Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:09:13.268Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:09:35.964Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:09:42.977Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:09:48.450Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:10:07.412Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:10:28.400Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:10:41.242Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:10:44.024Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:10:45.838Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:10:59.276Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:11:43.989Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:11:48.342Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:11:49.491Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:12:03.066Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:12:29.119Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:12:33.225Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:13:03.169Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:13:10.392Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:13:13.893Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:13:16.433Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:31:20.571Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:31:32.181Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:32:15.673Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:32:21.429Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:32:32.679Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:32:35.615Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:32:39.746Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:33:39.553Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T11:33:53.977Z"}

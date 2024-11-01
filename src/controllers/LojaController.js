@@ -10,15 +10,20 @@ async function pegarLojas(req,res)  {
   try {
     const lojas = await Loja.find();
 
-    logger.info("Lojas recuperadas com sucesso", { total: lojas.length });
-    // console.log(lojas);
-    res.status(200).json({
-      status: "success",
-      results: lojas.length,
-      data: {
-        lojas,
-      },
-    });
+    if(lojas.length > 0){
+      logger.info("Lojas recuperadas com sucesso", { total: lojas.length });
+      console.log("LOjas cadastradas: ", lojas);
+      res.status(200).json({
+        status: "success",
+        results: lojas.length,
+        data: {
+          lojas,
+        },
+      });
+    }else{
+      console.log("Sem lojas cadastradas!");
+    }
+
   } catch (err) {
     res.status(500).json({
       status: "error",
@@ -34,7 +39,7 @@ async function deletarLoja(req,res) {
     
     const loja = await Loja.findOneAndDelete({ cep: req.params.cep });
     
-    console.log("Loja: ", loja);
+    
     if (!loja) {
       console.log("Não foi possível  deletar loja!");
       logger.warn("Não foi possível deletar loja, loja não encontrada:", { cep: req.params.cep });
@@ -45,6 +50,7 @@ async function deletarLoja(req,res) {
     }
 
     logger.info("Loja deletada com sucesso:", { loja });
+    console.log("Loja removida: ", loja);
     res.status(200).json({
       status: "success",
       data: {
@@ -68,6 +74,7 @@ async function criarLoja(req,res) {
     // Constante para pegar latitude e longitude
     const latLong = await geoLocalizacao(cep.cep);
 
+    // Constantes para armazenar latitude e longitude
     const latitude = latLong.latitude;
     const longitude = latLong.longitude;
 
@@ -92,6 +99,7 @@ async function criarLoja(req,res) {
     });
 
     logger.info("Nova loja criada:", { loja: novaLoja });
+    console.log("Loja criada: ", novaLoja);
     res.status(201).json({
       status: "success",
       data: {
@@ -108,7 +116,7 @@ async function criarLoja(req,res) {
 };
 
 async function lojasProximas100km(req,res) {
-//exports.lojasProximas100km = async (req, res) => {
+
   try {
     const latLong = await geoLocalizacao(req.params.cep);
     const lojas = await Loja.find();
@@ -157,6 +165,7 @@ async function lojasProximas100km(req,res) {
 };
 
 
+// Exportar funções 
 module.exports = {
   pegarLojas,
   deletarLoja,
