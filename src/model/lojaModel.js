@@ -19,7 +19,7 @@ const lojaSchema = new mongoose.Schema({
   },
   localidade: {
     type: String,
-    required: [true, "Uma deve ter uma cidade"]
+    required: [true, "Uma loja deve ter uma cidade"]
   },
   uf: {
     type: String,
@@ -52,14 +52,6 @@ const lojaSchema = new mongoose.Schema({
   },
   ddd: {
     type: String,
-  },
-  latitude: {
-    type: Number,
-    required: true
-  },
-  longitude: {
-    type: Number,
-    required: true
   },
   siafi: {
     type: String,

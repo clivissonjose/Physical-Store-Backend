@@ -1,7 +1,12 @@
 const axios = require('axios');
 
 async function buscarCoordenadas(cep) {
+
+
   try {
+
+    // API do google maps para buscar lat e long
+    // É necesssário criar um cadastro para ter acesso a chave
     const response = await axios.get('https://maps.googleapis.com/maps/api/geocode/json', {
       params: {
         address: `${cep}, Brazil`,
@@ -18,7 +23,6 @@ async function buscarCoordenadas(cep) {
       return null;
     }
 
-    console.log(" latitude: ", data.results[0].geometry.location.lat,  "Longitude: ", data.results[0].geometry.location.lng);
     return {
       latitude: data.results[0].geometry.location.lat,
       longitude: data.results[0].geometry.location.lng

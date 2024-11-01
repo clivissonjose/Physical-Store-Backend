@@ -4,7 +4,7 @@ const geoLocalizacao = require("../services/buscarCoordenadasService");
 const calcularDistancia = require("../services/calcularDistanciaService");
 const logger = require("../utils/logger");
 
-// exports.pegarLojas = async (req, res) => {
+// Ver todas as lojas no  BD
 async function pegarLojas(req,res)  {
 
   try {
@@ -27,34 +27,7 @@ async function pegarLojas(req,res)  {
   }
 };
 
-// exports.pegarMesmoCep = async (req, res) => {
-async function pegarMesmoCep(req, res) {
-  try {
-    console.log("CEP buscado:", req.params.cep);
-    const lojas = await Loja.find({ cep: req.params.cep });
-
-    if (!lojas) {
-      return res.status(404).json({
-        status: "Fail",
-        message: "Não foi possível achar tal cep!",
-      });
-    }
-    // console.log("Quantidade de lojas: ", lojas.length); -> undefined
-    res.status(200).json({
-      status: "Success",
-      data: {
-        lojas: lojas,
-      },
-    });
-  } catch (err) {
-    res.status(500).json({
-      status: "Error",
-      message: err.message,
-    });
-  }
-};
-
-//exports.deletarLoja = async (req, res) => {
+// Deletar Loja
 async function deletarLoja(req,res) {
 
   try {
@@ -88,12 +61,10 @@ async function deletarLoja(req,res) {
 };
 
 async function criarLoja(req,res) {
-//exports.criarLoja = async (req, res) => {
   try {
     // Pegar cep digitado pelo usuário
     const cep = await buscarEndereco(req.body.cep);
 
-    console.log(cep);
     // Constante para pegar latitude e longitude
     const latLong = await geoLocalizacao(cep.cep);
 
@@ -161,7 +132,7 @@ async function lojasProximas100km(req,res) {
 
     if (lojasProximas.length > 0) {
       logger.info("Lojas próximas encontradas:", { lojas: lojasProximas });
-    //  console.log(lojasProximas);
+      console.log("Lojas mais próximas encontradas: ", lojasProximas);
       res.status(200).json({
         status: "Success",
         data: {
@@ -188,7 +159,6 @@ async function lojasProximas100km(req,res) {
 
 module.exports = {
   pegarLojas,
-  pegarMesmoCep,
   deletarLoja,
   criarLoja,
   lojasProximas100km

@@ -87,3 +87,49 @@
 {"level":"info","message":"Lojas recuperadas com sucesso","timestamp":"2024-10-31T21:47:36.452Z","total":15}
 {"cep":"56300000","level":"warn","message":"Sem lojas no raio de 100km para o CEP:","timestamp":"2024-10-31T21:47:48.037Z"}
 {"level":"info","lojas":[{"__v":0,"_id":"6722b72fb3457e0ec5746120","bairro":"Jacintinho","cep":"57041-000","complemento":"","ddd":"82","distancia":0,"estado":"Alagoas","gia":"","ibge":"2704302","latitude":-9.6407922,"localidade":"Maceió","logradouro":"Rua Cleto Campelo","longitude":-35.7179358,"nome":"Magazine Luiza","regiao":"Nordeste","siafi":"2785","uf":"AL","unidade":""},{"__v":0,"_id":"6722b703b3457e0ec574611e","bairro":"Farol","cep":"57050-000","complemento":"até 812 - lado par","ddd":"82","distancia":2.34708253137574,"estado":"Alagoas","gia":"","ibge":"2704302","latitude":-9.6537949,"localidade":"Maceió","logradouro":"Avenida Fernandes Lima","longitude":-35.7348017,"nome":"Magazine Luiza","regiao":"Nordeste","siafi":"2785","uf":"AL","unidade":""},{"__v":0,"_id":"6722b73bb3457e0ec5746122","bairro":"Cidade Universitária","cep":"57073-470","complemento":"lado ímpar","ddd":"82","distancia":6.099944460873981,"estado":"Alagoas","gia":"","ibge":"2704302","latitude":-9.587458800000002,"localidade":"Maceió","logradouro":"Avenida Menino Marcelo","longitude":-35.7309625,"nome":"Magazine Luiza","regiao":"Nordeste","siafi":"2785","uf":"AL","unidade":""},{"__v":0,"_id":"6723faba03af814265a1a25e","bairro":"","cep":"57800-000","complemento":"","ddd":"82","distancia":64.53111202875357,"estado":"Alagoas","gia":"","ibge":"2709301","latitude":-9.1113278,"localidade":"União dos Palmares","logradouro":"","longitude":-35.958777,"nome":"Magazine Luiza","regiao":"Nordeste","siafi":"2885","uf":"AL","unidade":""}],"message":"Lojas próximas encontradas:","timestamp":"2024-10-31T21:48:57.148Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-10-31T23:53:34.774Z"}
+{"level":"error","message":"Erro ao criar loja: Cannot read properties of null (reading 'cep')","timestamp":"2024-10-31T23:53:53.581Z"}
+{"level":"error","message":"Erro ao criar loja: Cannot read properties of null (reading 'cep')","timestamp":"2024-10-31T23:54:00.515Z"}
+{"level":"error","message":"Erro ao criar loja: Cannot read properties of null (reading 'cep')","timestamp":"2024-10-31T23:54:08.226Z"}
+{"level":"info","loja":{"__v":0,"_id":"672419137876deec290f8721","bairro":"Água Branca","cep":"05033-020","complemento":"","ddd":"11","estado":"São Paulo","gia":"1004","ibge":"3550308","latitude":-23.5218467,"localidade":"São Paulo","logradouro":"Rua Constança","longitude":-46.6966448,"nome":"Magazine Luiza","regiao":"Sudeste","siafi":"7107","uf":"SP","unidade":""},"message":"Nova loja criada:","timestamp":"2024-10-31T23:56:03.692Z"}
+{"level":"info","loja":{"__v":0,"_id":"6724194d7876deec290f8723","bairro":"Saúde","cep":"04142-090","complemento":"até 429 - lado ímpar","ddd":"11","estado":"São Paulo","gia":"1004","ibge":"3550308","latitude":-23.6114104,"localidade":"São Paulo","logradouro":"Avenida Bosque da Saúde","longitude":-46.6357661,"nome":"Magazine Luiza","regiao":"Sudeste","siafi":"7107","uf":"SP","unidade":""},"message":"Nova loja criada:","timestamp":"2024-10-31T23:57:01.283Z"}
+{"level":"info","loja":{"__v":0,"_id":"672419c77876deec290f8725","bairro":"Vila Aricanduva","cep":"03527-000","complemento":"lado ímpar","ddd":"11","estado":"São Paulo","gia":"1004","ibge":"3550308","latitude":-23.5438824,"localidade":"São Paulo","logradouro":"Avenida Aricanduva","longitude":-46.5305542,"nome":"Magazine Luiza","regiao":"Sudeste","siafi":"7107","uf":"SP","unidade":""},"message":"Nova loja criada:","timestamp":"2024-10-31T23:59:04.472Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T00:03:30.546Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T00:03:53.602Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T00:04:46.886Z"}
+{"level":"error","message":"Erro ao criar loja: Cannot read properties of null (reading 'cep')","timestamp":"2024-11-01T00:05:50.474Z"}
+{"level":"info","loja":{"__v":0,"_id":"67241ba392c53f87fb0a8314","bairro":"Vila Almeida","cep":"04795-000","complemento":"lado par","ddd":"11","estado":"São Paulo","gia":"1004","ibge":"3550308","latitude":-23.6752964,"localidade":"São Paulo","logradouro":"Avenida das Nações Unidas","longitude":-46.69973969999999,"nome":"Magazine Luiza","regiao":"Sudeste","siafi":"7107","uf":"SP","unidade":""},"message":"Nova loja criada:","timestamp":"2024-11-01T00:06:59.968Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T00:07:48.385Z"}
+{"level":"info","lojas":[{"__v":0,"_id":"67241ba392c53f87fb0a8314","bairro":"Vila Almeida","cep":"04795-000","complemento":"lado par","ddd":"11","distancia":0,"estado":"São Paulo","gia":"1004","ibge":"3550308","latitude":-23.6752964,"localidade":"São Paulo","logradouro":"Avenida das Nações Unidas","longitude":-46.69973969999999,"nome":"Magazine Luiza","regiao":"Sudeste","siafi":"7107","uf":"SP","unidade":""},{"__v":0,"_id":"6724194d7876deec290f8723","bairro":"Saúde","cep":"04142-090","complemento":"até 429 - lado ímpar","ddd":"11","distancia":9.639904616074833,"estado":"São Paulo","gia":"1004","ibge":"3550308","latitude":-23.6114104,"localidade":"São Paulo","logradouro":"Avenida Bosque da Saúde","longitude":-46.6357661,"nome":"Magazine Luiza","regiao":"Sudeste","siafi":"7107","uf":"SP","unidade":""},{"__v":0,"_id":"672419137876deec290f8721","bairro":"Água Branca","cep":"05033-020","complemento":"","ddd":"11","distancia":17.065742131315552,"estado":"São Paulo","gia":"1004","ibge":"3550308","latitude":-23.5218467,"localidade":"São Paulo","logradouro":"Rua Constança","longitude":-46.6966448,"nome":"Magazine Luiza","regiao":"Sudeste","siafi":"7107","uf":"SP","unidade":""},{"__v":0,"_id":"672419c77876deec290f8725","bairro":"Vila Aricanduva","cep":"03527-000","complemento":"lado ímpar","ddd":"11","distancia":22.598038691306666,"estado":"São Paulo","gia":"1004","ibge":"3550308","latitude":-23.5438824,"localidade":"São Paulo","logradouro":"Avenida Aricanduva","longitude":-46.5305542,"nome":"Magazine Luiza","regiao":"Sudeste","siafi":"7107","uf":"SP","unidade":""}],"message":"Lojas próximas encontradas:","timestamp":"2024-11-01T00:08:35.856Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:31:30.378Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:31:32.332Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:31:48.268Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:31:54.264Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:32:06.075Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:32:27.071Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:32:31.095Z"}
+{"level":"info","loja":{"__v":0,"_id":"67243e14dab19251b3a10759","bairro":"Consolação","cep":"01304-000","complemento":"até 698 - lado par","ddd":"11","estado":"São Paulo","gia":"1004","ibge":"3550308","latitude":-23.5506078,"localidade":"São Paulo","logradouro":"Rua Augusta","longitude":-46.6481319,"nome":"Magazine Luiza","regiao":"Sudeste","siafi":"7107","uf":"SP","unidade":""},"message":"Nova loja criada:","timestamp":"2024-11-01T02:33:56.857Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:35:54.492Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:35:57.929Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:36:37.126Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:36:40.493Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:36:48.514Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:36:56.637Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:37:12.972Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:37:15.377Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:37:27.796Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:37:33.005Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:37:38.207Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:38:15.486Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:38:17.213Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:38:23.188Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:38:38.675Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:38:53.458Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:38:54.521Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:39:06.129Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:39:08.255Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:39:20.763Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:40:31.274Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:40:33.215Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:41:35.467Z"}
+{"level":"info","message":"Iniciando o aplicativo...","timestamp":"2024-11-01T02:42:31.624Z"}
